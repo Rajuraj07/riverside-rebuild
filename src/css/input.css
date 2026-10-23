@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Sharp Grotesk";
+  src: url("../../src/assets/fonts/sharp-grotesk-book-regular.woff2         ");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../../src/assets/fonts/instrument-sans-regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../../src/assets/fonts/instrument-sans-medium.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../../src/assets/fonts/instrument-sans-semi-blod.woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /*Font Family*/
+  --font-body: "Instrument Sans", Arial, sans-serif;
+  --font-heading: "Sharp Grotesk", Arial, sans-serif;
+
+  /* Brand & Core Colors */
+  --color-brand-black: #1d1d1d;
+  --color-black: #151c22;
+  --color-peacock: #4745ce;
+  --color-lavender: #e4e1ff;
+  --color-slate-blue: #5042df;
+  --color-white-smoke: #f9fafc;
+  --color-peacock-2: #6357da;
+  --color-dark: #1d1d1d;
+  --color-black-2: black;
+  --color-white: white;
+
+  /* Tech Grays & Muted Tones */
+  --color-tech-gray-text: #d2d2d2;
+  --color-medium-slate-blue: #6d75f4;
+  --color-black-3: #161c21;
+  --color-white-smoke-3: #f6f6f6;
+  --color-alice-blue: #f1f6ff;
+  --color-ghost-white: #f5f6fb;
+  --color-white-smoke-2: #f1f1f1;
+  --color-primary-purple: #9671ff;
+  --color-grey: #8e9095;
+  --color-tech-gray: #ababab;
+
+  /* Accent & Utility Colors */
+  --color-black-02: #111;
+  --color-floral-white: #f4f1e9;
+  --color-mint-cream: #edf9f0;
+  --color-site-settings: white;
+  --color-secondary-black-2: #2c2c2c;
+  --color-secondary-c150: #dbdbdb;
+  --color-secondary-purple: #ad98fa;
+  --color-secondary-c300: #888;
+  --color-light: #f6f4f9;
+  --color-slate-blue-2: #0f97fa;
+  --color-lime: #dfff84;
+  --color-white-ca: #cacaca;
+  --color-black-111: white;
+  --color-primary-500: #b196ff;
+  --color-text-colors: white;
+}
+
+/* Global Heading Font Application */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+  }
+}
+
+/* Stretched Link Card Utility */
+@utility stretched-link {
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+}
+
+@utility bg-cta-gradient {
+  background-image:
+    linear-gradient(107deg, #0000 70%, #111),
+    url("https://cdn.prod.website-files.com/685be7dcd32275d3830651d3/68de8d4ac9bee397e7b6a5b4_rayw__bg.webp");
+  background-position:
+    0 0,
+    0 0;
+  background-size: auto, cover;
+}
+
+/*=====================
+ Custom Styles
+=======================*/
+
+/* Active & Hover States */
+.ete__item.active .ete__h3,
+.ete__item.open .ete__h3 {
+  color: #ffffff;
+}
+
+.ete__item.active p,
+.ete__item.open p {
+  color: #cccccc;
+}
+.ete__video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  z-index: 0;
+  border-radius: 8px;
+}
+.nav-logo {
+  filter: invert(100%);
+}
+.nav_component.cc-scrolled {
+  color: #1d1d1dcc;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(29, 29, 29, 0.05);
+}
+.nav_component.cc-scrolled .nav-logo {
+  filter: invert(0%);
+}
+.nav_component.cc-scrolled .nav-button {
+  background-color: #1d1d1d;
+  border-color: #1d1d1d;
+}
+
+.nav_component.cc-scrolled .nav-button:hover {
+  background: #000000;
+  color: #fff;
+}
+
+.nav_component.cc-scrolled #desktop-nav button:hover,
+.nav_component.cc-scrolled #desktop-nav a:hover,
+.nav_component.cc-scrolled .desktop-right .nav-link:hover {
+  color: #1d1d1dcc;
+}
+
+@media (min-width: 768px) {
+  .hoe__nav-item.is--active {
+    pointer-events: none;
+    cursor: auto;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translateX(calc(100vw - 100%));
+  }
+}
