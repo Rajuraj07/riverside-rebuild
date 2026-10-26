@@ -165,7 +165,9 @@
 .nav_component.cc-scrolled .desktop-right .nav-link:hover {
   color: #1d1d1dcc;
 }
-
+.nav_component.cc-scrolled #mobile-menu-btn {
+  color: #1d1d1d;
+}
 @media (min-width: 768px) {
   .hoe__nav-item.is--active {
     pointer-events: none;
