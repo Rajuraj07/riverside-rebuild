@@ -594,4 +594,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 100);
   });
 
+  //5. header button animation helper code
+  const checkboxes = document.querySelectorAll('.option-checkbox');
+  const button = document.getElementById('animated-button');
+
+  function updateButtonState() {
+    const isAnyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+    button.classList.toggle('is-active', isAnyChecked);
+  }
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', updateButtonState);
+  });
+
 });

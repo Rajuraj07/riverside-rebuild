@@ -168,6 +168,76 @@
 .nav_component.cc-scrolled #mobile-menu-btn {
   color: #1d1d1d;
 }
+
+/* Active outline glow */
+#animated-button.is-active {
+  outline-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Text Shimmer / Highlight Wave Animation */
+#animated-button.is-active .ab-text {
+  transform: translateX(-16px);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 35%,
+    #ffffff 48%,
+    #ffffff 52%,
+    rgba(255, 255, 255, 0.5) 65%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  background-size: 250% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: ab-wave 8s linear infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Icon Reveal & Slide-in Animation */
+#animated-button.is-active .ab-icon {
+  opacity: 1;
+  --tw-translate-x: 0;
+}
+
+#animated-button .ab-ring {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  pointer-events: none;
+  opacity: 0;
+}
+
+#animated-button.is-active .ab-ring {
+  animation: ab-ringExpand 2.6s cubic-bezier(0.2, 0, 0.4, 1) forwards;
+}
+
+/* Shimmer Keyframes */
+@keyframes ab-wave {
+  0% {
+    background-position: 300% center;
+  }
+  100% {
+    background-position: -300% center;
+  }
+}
+
+@keyframes ab-ringExpand {
+  0% {
+    inset: 0;
+    opacity: 1;
+  }
+  100% {
+    inset: -8px;
+    opacity: 0;
+    border-color: rgba(255, 255, 255, 1);
+  }
+}
+
 @media (min-width: 768px) {
   .hoe__nav-item.is--active {
     pointer-events: none;

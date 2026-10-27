@@ -65,6 +65,13 @@
     class="font-body text-[1rem] font-normal leading-[1.5] tracking-[0.01em] text-brand-black"
   >
     <div class="page-wrapper overflow-x-hidden">
+      <a
+        data-target="skip-link"
+        href="#main-content"
+        class="fixed top-0 left-0 w-full text-center z-[9999] -translate-y-[200%] focus:translate-y-0 bg-dark text-white font-semibold px-6 py-3 shadow-xl transition-transform duration-200"
+      >
+        Skip to Main
+      </a>
       <header
         class="fixed top-0 z-50 w-full bg-transparent text-white/80 font-body nav_component transition-all"
       >
@@ -1812,7 +1819,7 @@
           </div>
         </div>
       </header>
-      <main id="main">
+      <main id="main-content">
         <section
           class="min-h-[850px] max-sm:min-h-auto sm:pt-[129px] pt-[78px] sm:pb-[120px] pb-[64px] relative z-0 sm:px-8 px-4 text-white flex flex-col justify-between h-[calc(100vh+61px)]"
         >
@@ -1848,7 +1855,11 @@
                   class="group relative inline-flex items-center gap-2.5 rounded-full px-[20px] py-[14px] text-[18px] text-white bg-[#1d1d1d]/50 border-2 border-transparent cursor-pointer transition-all duration-300 hover:border-[#ad98fa] has-[:checked]:bg-[#1d1d1d]/80 has-[:checked]:border-[#ad98fa] leading-[1]"
                 >
                   <!-- Hidden Checkbox Tracker -->
-                  <input type="checkbox" class="sr-only" />
+                  <input
+                    type="checkbox"
+                    class="option-checkbox sr-only"
+                    tabindex="-1"
+                  />
 
                   <!-- Icon Container -->
                   <div
@@ -1875,7 +1886,11 @@
                   class="group relative inline-flex items-center gap-2.5 rounded-full px-[20px] py-[14px] text-[18px] text-white bg-[#1d1d1d]/50 border-2 border-transparent cursor-pointer transition-all duration-300 hover:border-[#ad98fa] has-[:checked]:bg-[#1d1d1d]/80 has-[:checked]:border-[#ad98fa] leading-[1]"
                 >
                   <!-- Hidden Checkbox Tracker -->
-                  <input type="checkbox" class="sr-only" />
+                  <input
+                    type="checkbox"
+                    class="option-checkbox sr-only"
+                    tabindex="-1"
+                  />
 
                   <!-- Icon Container -->
                   <div
@@ -1902,7 +1917,11 @@
                   class="group relative inline-flex items-center gap-2.5 rounded-full px-[20px] py-[14px] text-[18px] text-white bg-[#1d1d1d]/50 border-2 border-transparent cursor-pointer transition-all duration-300 hover:border-[#ad98fa] has-[:checked]:bg-[#1d1d1d]/80 has-[:checked]:border-[#ad98fa] leading-[1]"
                 >
                   <!-- Hidden Checkbox Tracker -->
-                  <input type="checkbox" class="sr-only" />
+                  <input
+                    type="checkbox"
+                    class="option-checkbox sr-only"
+                    tabindex="-1"
+                  />
 
                   <!-- Icon Container -->
                   <div
@@ -1929,7 +1948,11 @@
                   class="group relative inline-flex items-center gap-2.5 rounded-full px-[20px] py-[14px] text-[18px] text-white bg-[#1d1d1d]/50 border-2 border-transparent cursor-pointer transition-all duration-300 hover:border-[#ad98fa] has-[:checked]:bg-[#1d1d1d]/80 has-[:checked]:border-[#ad98fa] leading-[1]"
                 >
                   <!-- Hidden Checkbox Tracker -->
-                  <input type="checkbox" class="sr-only" />
+                  <input
+                    type="checkbox"
+                    class="option-checkbox sr-only"
+                    tabindex="-1"
+                  />
 
                   <!-- Icon Container -->
                   <div
@@ -1956,7 +1979,11 @@
                   class="group relative inline-flex items-center gap-2.5 rounded-full px-[20px] py-[14px] text-[18px] text-white bg-[#1d1d1d]/50 border-2 border-transparent cursor-pointer transition-all duration-300 hover:border-[#ad98fa] has-[:checked]:bg-[#1d1d1d]/80 has-[:checked]:border-[#ad98fa] leading-[1]"
                 >
                   <!-- Hidden Checkbox Tracker -->
-                  <input type="checkbox" class="sr-only" />
+                  <input
+                    type="checkbox"
+                    class="option-checkbox sr-only"
+                    tabindex="-1"
+                  />
 
                   <!-- Icon Container -->
                   <div
@@ -1983,7 +2010,11 @@
                   class="group relative inline-flex items-center gap-2.5 rounded-full px-[20px] py-[14px] text-[18px] text-white bg-[#1d1d1d]/50 border-2 border-transparent cursor-pointer transition-all duration-300 hover:border-[#ad98fa] has-[:checked]:bg-[#1d1d1d]/80 has-[:checked]:border-[#ad98fa] leading-[1]"
                 >
                   <!-- Hidden Checkbox Tracker -->
-                  <input type="checkbox" class="sr-only" />
+                  <input
+                    type="checkbox"
+                    class="option-checkbox sr-only"
+                    tabindex="-1"
+                  />
 
                   <!-- Icon Container -->
                   <div
@@ -2010,7 +2041,11 @@
                   class="group relative inline-flex items-center gap-2.5 rounded-full px-[20px] py-[14px] text-[18px] text-white bg-[#1d1d1d]/50 border-2 border-transparent cursor-pointer transition-all duration-300 hover:border-[#ad98fa] has-[:checked]:bg-[#1d1d1d]/80 has-[:checked]:border-[#ad98fa] leading-[1]"
                 >
                   <!-- Hidden Checkbox Tracker -->
-                  <input type="checkbox" class="sr-only" />
+                  <input
+                    type="checkbox"
+                    class="option-checkbox sr-only"
+                    tabindex="-1"
+                  />
 
                   <!-- Icon Container -->
                   <div
@@ -2034,11 +2069,14 @@
                 </label>
               </div>
               <a
-                class="w-[210px] h-[52px] rounded-full bg-primary-purple flex items-center justify-center relative overflow-hidden transition-colors hover:bg-[#885EFF]"
-                href=""
-                ><span class="font-semibold">Start for Free</span>
+                id="animated-button"
+                class="w-[210px] h-[52px] rounded-full bg-primary-purple flex items-center justify-center relative overflow-hidden transition-colors hover:bg-[#885EFF] border-0 outline-[4px] outline-solid outline-[#ffffff00] outline-offset-[2px] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                href="#"
+              >
+                <span class="ab-ring"></span>
+                <span class="font-semibold ab-text">Start for Free</span>
                 <span
-                  class="w-[34px] h-[34px] rounded-[50%] bg-[rgba(255,255,255,0.2)] border border-[rgba(255,255,255,0.25)] flex items-center justify-center absolute right-2 top-[50%] translate-y-[-50%] translate-x-4 opacity-0"
+                  class="ab-icon w-[34px] h-[34px] rounded-[50%] bg-[rgba(255,255,255,0.2)] border border-[rgba(255,255,255,0.25)] flex items-center justify-center absolute right-2 top-[50%] translate-y-[-50%] translate-x-4 opacity-0 transition-opacity transition-transform"
                 >
                   <svg
                     width="16"
