@@ -64,7 +64,7 @@
   <body
     class="font-body text-[1rem] font-normal leading-[1.5] tracking-[0.01em] text-brand-black"
   >
-    <div class="page-wrapper overflow-x-hidden">
+    <div class="page-wrapper overflow-x-clip">
       <a
         data-target="skip-link"
         href="#main-content"
@@ -3207,7 +3207,7 @@
           </div>
         </section>
         <section class="sm:px-8 px-4 md:py-20 py-10 bg-black-02 text-white">
-          <div class="max-w-[900px] mx-auto w-full">
+          <div class="max-w-[1280px] mx-auto w-full">
             <!-- Outer tab Wrapper -->
             <div
               class="hoe__wrap flex flex-col md:flex-row gap-10 md:gap-[124px]"
@@ -3700,7 +3700,7 @@
                   autoplay
                   loop
                   playsinline
-                  class="object-cover block w-full absolute top-0 left-0"
+                  class="object-cover block w-full h-full absolute top-0 left-0"
                 >
                   <source id="desktop-video-source" src="" type="video/mp4" />
                 </video>
@@ -3830,7 +3830,7 @@
         <section
           class="sm:px-8 px-4 md:pt-28 md:pb-28 pt-10 pb-10 bg-black-02 text-white"
         >
-          <div class="max-w-[900px] mx-auto w-full">
+          <div class="max-w-[1280px] mx-auto w-full">
             <div class="flex max-md:flex-col items-center md:gap-4">
               <img
                 class="md:w-[43.88vw] w-full max-w-[632px]"
@@ -4151,30 +4151,49 @@
                 alt="Person in a purple sweater wearing headphones, sitting on a chair at a wooden table with a pen, notebook, and glass of water."
               />
               <img
-                class="w-[101%] h-auto relative left-[50%] translate-x-[-50%]"
-                src="./src/assets/images/footer-image.webp"
+                class="w-[101%] h-auto relative left-[50%] translate-x-[-50%] hidden max-sm:block"
+                src="./src/assets/images/footer_sm.webp"
                 alt="Person in a purple sweater wearing headphones, sitting on a chair at a wooden table with a pen, notebook, and glass of water."
               />
             </div>
             <div
-              class="md:mt-[190px] mt-27 flex flex-col justify-between absolute inset-0 max-md:px-4"
+              class="md:mt-[190px] mt-27 flex flex-col max-md:px-4 absolute inset-0"
             >
-              <a
-                href="#"
-                class="py-5 px-10 mx-6 bg-primary-purple text-white text-center border border-[#9671ff00] rounded-full leading-[1] font-medium transition-colors hover:bg-[#885eff] lg:block"
+              <div
+                class="max-w-[700px] mx-auto flex items-center flex-col gap-[32px] sticky top-160 mb-25"
               >
-                Start for Free
-              </a>
-              <div class="max-w-[700px] mx-auto">
                 <h2
-                  class="md:text-[56px] text-[36px] leading-[1.25] tracking-normal md:mb-25 mb-18 text-center"
+                  class="md:text-[56px] text-[36px] leading-[1.25] tracking-normal text-center"
                 >
                   Your all-in-one studio. Ready when you are.
                 </h2>
+                <a
+                  href="#"
+                  class="py-5 px-10 mx-6 bg-primary-purple text-white text-center border border-[#9671ff00] rounded-full leading-[1] font-medium transition-colors hover:bg-[#885eff]"
+                >
+                  Start for Free
+                </a>
               </div>
             </div>
           </div>
         </div>
+        <section
+          class="sm:px-8 px-4 md:pt-20 md:pb-20 pt-10 pb-10 bg-black-02 text-white rounded-br-[40px] rounded-bl-[40px]"
+        >
+          <div class="flex flex-col items-center justify-center text-center">
+            <h2
+              class="md:text-[40px] text-[24px] leading-[1.25] tracking-normal mb-6"
+            >
+              Ready to create? We think so too.
+            </h2>
+            <a
+              href="#"
+              class="py-5 px-10 bg-primary-purple text-white text-center border border-[#9671ff00] rounded-full leading-[1] font-medium transition-colors hover:bg-[#885eff] lg:block"
+            >
+              Start for Free
+            </a>
+          </div>
+        </section>
       </main>
       <footer class="sm:px-8 px-4 pt-10 md:pb-20 pb-10 bg-white-smoke-3">
         <!-- Footer Top -->
@@ -4798,23 +4817,6 @@
           </ul>
         </div>
       </footer>
-      <section
-        class="sm:px-8 px-4 md:pt-20 md:pb-20 pt-10 pb-10 bg-black-02 text-white rounded-br-[40px] rounded-bl-[40px]"
-      >
-        <div class="flex flex-col items-center justify-center text-center">
-          <h2
-            class="md:text-[40px] text-[24px] leading-[1.25] tracking-normal mb-6"
-          >
-            Ready to create? We think so too.
-          </h2>
-          <a
-            href="#"
-            class="py-5 px-10 bg-primary-purple text-white text-center border border-[#9671ff00] rounded-full leading-[1] font-medium transition-colors hover:bg-[#885eff] lg:block"
-          >
-            Start for Free
-          </a>
-        </div>
-      </section>
     </div>
     <!-- Scripts -->
     <script src="./src/js/main.js" defer></script>

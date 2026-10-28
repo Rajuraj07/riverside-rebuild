@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Sharp Grotesk";
-  src: url("../../src/assets/fonts/sharp-grotesk-book-regular.woff2         ");
+  src: url("/src/assets/fonts/sharp-grotesk-book-regular.woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("../../src/assets/fonts/instrument-sans-regular.woff2");
+  src: url("/src/assets/fonts/instrument-sans-regular.woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("../../src/assets/fonts/instrument-sans-medium.woff2");
+  src: url("/src/assets/fonts/instrument-sans-medium.woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: "Instrument Sans";
-  src: url("../../src/assets/fonts/instrument-sans-semi-blod.woff2");
+  src: url("/src/assets/fonts/instrument-sans-semi-blod.woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
